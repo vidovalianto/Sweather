@@ -9,16 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var dashboardVM = DashboardViewModel.shared
-    
+    @State var isUpdate = true
+    @State var shouldRestart = false
+
     var body: some View {
         VStack {
             Text(dashboardVM.curLocation ?? "Looking for location")
-            if let location = dashboardVM.curLocation,
+                .bold()
+                .font(.subheadline)
+            
+            if self.isUpdate,
                let weather = dashboardVM.weathers,
                let lottieName = weather.weathers.first?.icon.lottieCode {
                 LottieView(name: lottieName,
                            loopMode: .loop,
                            contentMode: .scaleAspectFit)
+                    .onReceive(NotificationCenter.default.publisher(for: UIScene.willDeactivateNotification)) { _ in
+                            self.isUpdate = false
+                        }
+                    
                 
                 Spacer()
                 
@@ -34,9 +43,27 @@ struct ContentView: View {
                 LottieView(name: "error",
                            loopMode: .loop,
                            contentMode: .scaleAspectFit)
+                    .onAppear {
+                        self.toggleRestart()
+                    }
+                if shouldRestart {
+                    Text("Restart app after you have working connection").font(.caption)
+                }
             }
-            
-        }.padding()
+        }.padding().onReceive(NotificationCenter.default.publisher(for: UIScene.didActivateNotification)) { _ in
+            self.isUpdate = true
+    }
+        .onReceive(NotificationCenter.default.publisher(for: UIScene.willEnterForegroundNotification)) { _ in
+            self.isUpdate = true
+        }.onDisappear {
+            shouldRestart = false
+        }
+    }
+    
+    func toggleRestart() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
+            shouldRestart = true
+        }
     }
 }
 
