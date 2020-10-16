@@ -46,11 +46,13 @@ struct ContentView: View {
                     .onAppear {
                         self.toggleRestart()
                     }
+                
                 if shouldRestart {
                     Text("Restart app after you have working connection").font(.caption)
                 }
             }
-        }.padding().onReceive(NotificationCenter.default.publisher(for: UIScene.didActivateNotification)) { _ in
+        }.padding()
+        .onReceive(NotificationCenter.default.publisher(for: UIScene.didActivateNotification)) { _ in
             self.isUpdate = true
     }
         .onReceive(NotificationCenter.default.publisher(for: UIScene.willEnterForegroundNotification)) { _ in
@@ -60,7 +62,7 @@ struct ContentView: View {
         }
     }
     
-    func toggleRestart() {
+    private func toggleRestart() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
             shouldRestart = true
         }
