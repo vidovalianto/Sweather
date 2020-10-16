@@ -11,13 +11,4 @@ This app integrated MapKit and Lottie. Mapkit helps to check the latest user loc
   
 ## Result:
 
-![alt text](https://github.com/vidovalianto/Sweather/blob/main/Gif/%20cloudy.gif)
-
-![alt text](https://github.com/vidovalianto/Sweather/blob/main/Gif/night.gif)
-
-![alt text](https://github.com/vidovalianto/Sweather/blob/main/Gif/snowy.gif)
-
-![alt text](https://github.com/vidovalianto/Sweather/blob/main/Gif/thunderstorm.gif)
-
-![alt text](https://github.com/vidovalianto/Sweather/blob/main/Gif/error.gif)
-  
+<img src="https://github.com/vidovalianto/Sweather/blob/main/Gif/%20cloudy.gif" height="200"> <img src="https://github.com/vidovalianto/Sweather/blob/main/Gif/night.gif" height="200"> <img src="https://github.com/vidovalianto/Sweather/blob/main/Gif/snowy.gif" height="200"> <img src="https://github.com/vidovalianto/Sweather/blob/main/Gif/thunderstorm.gif" height="200"> <img src="https://github.com/vidovalianto/Sweather/blob/main/Gif/error.gif" height="200">
