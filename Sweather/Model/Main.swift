@@ -14,20 +14,20 @@ public class Main: Codable {
     public let tempMin: Double
     public let tempMax: Double
     public let pressure: Int
-//    public let seaLevel: Int
-//    public let grndLevel: Int
+    public let seaLevel: Int?
+    public let grndLevel: Int?
     public let humidity: Int
-//    public let tempKf: Double
+    public let tempKf: Double?
 
 
     enum CodingKeys: String, CodingKey {
         case temp, pressure, humidity,
         feelsLike = "feels_like",
         tempMin = "temp_min",
-        tempMax = "temp_max"
-//        seaLevel = "sea_level",
-//        grndLevel = "grnd_level",
-//        tempKf = "temp_kf"
+        tempMax = "temp_max",
+        seaLevel = "sea_level",
+        grndLevel = "grnd_level",
+        tempKf = "temp_kf"
     }
 
     public init(temp: Double = 0.0,
@@ -45,9 +45,9 @@ public class Main: Codable {
         self.humidity = humidity
         self.tempMin = tempMin
         self.tempMax = tempMax
-//        self.seaLevel = seaLevel
-//        self.grndLevel = grndLevel
-//        self.tempKf = tempKf
+        self.seaLevel = seaLevel
+        self.grndLevel = grndLevel
+        self.tempKf = tempKf
     }
 
     required public init(from decoder: Decoder) throws {
@@ -58,8 +58,8 @@ public class Main: Codable {
         self.humidity = try container.decode(Int.self, forKey: .humidity)
         self.tempMin = try container.decode(Double.self, forKey: .tempMin)
         self.tempMax = try container.decode(Double.self, forKey: .tempMax)
-//        self.seaLevel = try container.decode(Int.self, forKey: .seaLevel)
-//        self.grndLevel = try container.decode(Int.self, forKey: .grndLevel)
-//        self.tempKf = try container.decode(Double.self, forKey: .tempKf)
+        self.seaLevel = try? container.decode(Int.self, forKey: .seaLevel)
+        self.grndLevel = try? container.decode(Int.self, forKey: .grndLevel)
+        self.tempKf = try? container.decode(Double.self, forKey: .tempKf)
     }
 }

@@ -13,7 +13,7 @@ public enum Link {
     case coordinateLink(lat: String, lon: String)
     
     private static let base = "https://api.openweathermap.org/data/2.5/weather?"
-    private static let appKey = URLQueryItem(name:"appid", value:"Put Your API Key Here")
+    private static let appKey = URLQueryItem(name:"appid", value:"Insert Your API Key")
 
     public var url: URL? {
         switch self {
@@ -76,6 +76,7 @@ public final class NetworkManager {
             return Fail(error: DataError.invalidURL)
                 .eraseToAnyPublisher()
         }
+        print(url)
 
         return urlSession.dataTaskPublisher(for: url)
             .retry(3)

@@ -9,18 +9,21 @@
 import Foundation
 
 public class Rain: Codable {
-    public let h: Double
+    public let oneh: Double?
+    public let threeh: Double?
 
     enum CodingKeys: String, CodingKey {
-        case h = "3h"
+        case oneh = "1h", threeh = "3h"
     }
 
-    public init(h: Double = 0.0) {
-        self.h = h
+    public init(oneh: Double = 0.0, threeh: Double = 0.0) {
+        self.oneh = oneh
+        self.threeh = threeh
     }
 
     required public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.h = try container.decode(Double.self, forKey: .h)
+        self.oneh = try? container.decode(Double.self, forKey: .oneh)
+        self.threeh = try? container.decode(Double.self, forKey: .threeh)
     }
 }
