@@ -11,7 +11,7 @@ This app integrated MapKit and Lottie. Mapkit helps to check the latest user loc
   
 ## Result:
 
-![alt text](https://github.com/vidovalianto/Sweather/blob/main/Gif/cloudy.gif)
+![alt text](https://github.com/vidovalianto/Sweather/blob/main/Gif/%20cloudy.gif)
 
 ![alt text](https://github.com/vidovalianto/Sweather/blob/main/Gif/night.gif)
 
