@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E46821942539133400DD12AE /* String + lottieCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46821932539133400DD12AE /* String + lottieCode.swift */; };
+		E4682199253915C100DD12AE /* partlycloudy.json in Resources */ = {isa = PBXBuildFile; fileRef = E4682198253915C100DD12AE /* partlycloudy.json */; };
+		E46821A12539173A00DD12AE /* error.json in Resources */ = {isa = PBXBuildFile; fileRef = E46821A02539173A00DD12AE /* error.json */; };
+		E46821A92539201000DD12AE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46821A82539201000DD12AE /* DetailView.swift */; };
+		E46821AE2539213500DD12AE /* Double + toFahrenheit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46821AD2539213500DD12AE /* Double + toFahrenheit.swift */; };
+		E477EED42537AE870082804C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EED32537AE870082804C /* AppDelegate.swift */; };
+		E477EED62537AE870082804C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EED52537AE870082804C /* SceneDelegate.swift */; };
+		E477EED82537AE870082804C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EED72537AE870082804C /* ContentView.swift */; };
+		E477EEDA2537AE870082804C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E477EED92537AE870082804C /* Assets.xcassets */; };
+		E477EEDD2537AE870082804C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E477EEDC2537AE870082804C /* Preview Assets.xcassets */; };
+		E477EEE02537AE870082804C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E477EEDE2537AE870082804C /* LaunchScreen.storyboard */; };
+		E477EEEB2537AE870082804C /* SweatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EEEA2537AE870082804C /* SweatherTests.swift */; };
+		E477EEF62537AE870082804C /* SweatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EEF52537AE870082804C /* SweatherUITests.swift */; };
+		E477EF082537AEB10082804C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E477EF072537AEB10082804C /* Lottie */; };
+		E477EF112537AECB0082804C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EF102537AECB0082804C /* NetworkManager.swift */; };
+		E477EF172537AEF90082804C /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EF162537AEF90082804C /* LottieView.swift */; };
+		E477EF2F2537B01C0082804C /* snowsunny.json in Resources */ = {isa = PBXBuildFile; fileRef = E477EF212537B01B0082804C /* snowsunny.json */; };
+		E477EF302537B01C0082804C /* nightrain.json in Resources */ = {isa = PBXBuildFile; fileRef = E477EF222537B01B0082804C /* nightrain.json */; };
+		E477EF312537B01C0082804C /* storm.json in Resources */ = {isa = PBXBuildFile; fileRef = E477EF232537B01C0082804C /* storm.json */; };
+		E477EF322537B01C0082804C /* mist.json in Resources */ = {isa = PBXBuildFile; fileRef = E477EF242537B01C0082804C /* mist.json */; };
+		E477EF332537B01C0082804C /* thunder.json in Resources */ = {isa = PBXBuildFile; fileRef = E477EF252537B01C0082804C /* thunder.json */; };
+		E477EF342537B01C0082804C /* snow.json in Resources */ = {isa = PBXBuildFile; fileRef = E477EF262537B01C0082804C /* snow.json */; };
+		E477EF352537B01C0082804C /* rainynight.json in Resources */ = {isa = PBXBuildFile; fileRef = E477EF272537B01C0082804C /* rainynight.json */; };
+		E477EF362537B01C0082804C /* sunny.json in Resources */ = {isa = PBXBuildFile; fileRef = E477EF282537B01C0082804C /* sunny.json */; };
+		E477EF372537B01C0082804C /* stormshowersday.json in Resources */ = {isa = PBXBuildFile; fileRef = E477EF292537B01C0082804C /* stormshowersday.json */; };
+		E477EF382537B01C0082804C /* windy.json in Resources */ = {isa = PBXBuildFile; fileRef = E477EF2A2537B01C0082804C /* windy.json */; };
+		E477EF392537B01C0082804C /* night.json in Resources */ = {isa = PBXBuildFile; fileRef = E477EF2B2537B01C0082804C /* night.json */; };
+		E477EF3A2537B01C0082804C /* cloudynight.json in Resources */ = {isa = PBXBuildFile; fileRef = E477EF2C2537B01C0082804C /* cloudynight.json */; };
+		E477EF3B2537B01C0082804C /* snownight.json in Resources */ = {isa = PBXBuildFile; fileRef = E477EF2D2537B01C0082804C /* snownight.json */; };
+		E477EF3C2537B01C0082804C /* partlyshower.json in Resources */ = {isa = PBXBuildFile; fileRef = E477EF2E2537B01C0082804C /* partlyshower.json */; };
+		E477EF542537B1FE0082804C /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EF532537B1FE0082804C /* DashboardViewModel.swift */; };
+		E477EF6A2537F5D40082804C /* Rain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EF602537F5D30082804C /* Rain.swift */; };
+		E477EF6B2537F5D40082804C /* RespondWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EF612537F5D30082804C /* RespondWeather.swift */; };
+		E477EF6C2537F5D40082804C /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EF622537F5D30082804C /* City.swift */; };
+		E477EF6D2537F5D40082804C /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EF632537F5D30082804C /* Weather.swift */; };
+		E477EF6E2537F5D40082804C /* RespondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EF642537F5D30082804C /* RespondModel.swift */; };
+		E477EF6F2537F5D40082804C /* Sys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EF652537F5D30082804C /* Sys.swift */; };
+		E477EF702537F5D40082804C /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EF662537F5D30082804C /* Wind.swift */; };
+		E477EF712537F5D40082804C /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EF672537F5D40082804C /* Cloud.swift */; };
+		E477EF722537F5D40082804C /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EF682537F5D40082804C /* Coord.swift */; };
+		E477EF732537F5D40082804C /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EF692537F5D40082804C /* Main.swift */; };
+		E477EF7F2537F8D90082804C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EF7E2537F8D90082804C /* LocationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E477EEE72537AE870082804C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E477EEC82537AE860082804C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E477EECF2537AE860082804C;
+			remoteInfo = Sweather;
+		};
+		E477EEF22537AE870082804C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E477EEC82537AE860082804C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E477EECF2537AE860082804C;
+			remoteInfo = Sweather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E46821932539133400DD12AE /* String + lottieCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + lottieCode.swift"; sourceTree = "<group>"; };
+		E4682198253915C100DD12AE /* partlycloudy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = partlycloudy.json; sourceTree = "<group>"; };
+		E46821A02539173A00DD12AE /* error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error.json; sourceTree = "<group>"; };
+		E46821A82539201000DD12AE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E46821AD2539213500DD12AE /* Double + toFahrenheit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double + toFahrenheit.swift"; sourceTree = "<group>"; };
+		E477EED02537AE860082804C /* Sweather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sweather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E477EED32537AE870082804C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E477EED52537AE870082804C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E477EED72537AE870082804C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E477EED92537AE870082804C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E477EEDC2537AE870082804C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E477EEDF2537AE870082804C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E477EEE12537AE870082804C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E477EEE62537AE870082804C /* SweatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E477EEEA2537AE870082804C /* SweatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweatherTests.swift; sourceTree = "<group>"; };
+		E477EEEC2537AE870082804C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E477EEF12537AE870082804C /* SweatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E477EEF52537AE870082804C /* SweatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweatherUITests.swift; sourceTree = "<group>"; };
+		E477EEF72537AE870082804C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E477EF102537AECB0082804C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E477EF162537AEF90082804C /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		E477EF212537B01B0082804C /* snowsunny.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = snowsunny.json; sourceTree = "<group>"; };
+		E477EF222537B01B0082804C /* nightrain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nightrain.json; sourceTree = "<group>"; };
+		E477EF232537B01C0082804C /* storm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = storm.json; sourceTree = "<group>"; };
+		E477EF242537B01C0082804C /* mist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mist.json; sourceTree = "<group>"; };
+		E477EF252537B01C0082804C /* thunder.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = thunder.json; sourceTree = "<group>"; };
+		E477EF262537B01C0082804C /* snow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = snow.json; sourceTree = "<group>"; };
+		E477EF272537B01C0082804C /* rainynight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rainynight.json; sourceTree = "<group>"; };
+		E477EF282537B01C0082804C /* sunny.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sunny.json; sourceTree = "<group>"; };
+		E477EF292537B01C0082804C /* stormshowersday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stormshowersday.json; sourceTree = "<group>"; };
+		E477EF2A2537B01C0082804C /* windy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = windy.json; sourceTree = "<group>"; };
+		E477EF2B2537B01C0082804C /* night.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = night.json; sourceTree = "<group>"; };
+		E477EF2C2537B01C0082804C /* cloudynight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cloudynight.json; sourceTree = "<group>"; };
+		E477EF2D2537B01C0082804C /* snownight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = snownight.json; sourceTree = "<group>"; };
+		E477EF2E2537B01C0082804C /* partlyshower.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = partlyshower.json; sourceTree = "<group>"; };
+		E477EF532537B1FE0082804C /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		E477EF602537F5D30082804C /* Rain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rain.swift; sourceTree = "<group>"; };
+		E477EF612537F5D30082804C /* RespondWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespondWeather.swift; sourceTree = "<group>"; };
+		E477EF622537F5D30082804C /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		E477EF632537F5D30082804C /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		E477EF642537F5D30082804C /* RespondModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespondModel.swift; sourceTree = "<group>"; };
+		E477EF652537F5D30082804C /* Sys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sys.swift; sourceTree = "<group>"; };
+		E477EF662537F5D30082804C /* Wind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
+		E477EF672537F5D40082804C /* Cloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		E477EF682537F5D40082804C /* Coord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coord.swift; sourceTree = "<group>"; };
+		E477EF692537F5D40082804C /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		E477EF7E2537F8D90082804C /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E477EECD2537AE860082804C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E477EF082537AEB10082804C /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E477EEE32537AE870082804C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E477EEEE2537AE870082804C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E46821B22539213A00DD12AE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E46821932539133400DD12AE /* String + lottieCode.swift */,
+				E46821AD2539213500DD12AE /* Double + toFahrenheit.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		E477EEC72537AE860082804C = {
+			isa = PBXGroup;
+			children = (
+				E477EED22537AE870082804C /* Sweather */,
+				E477EEE92537AE870082804C /* SweatherTests */,
+				E477EEF42537AE870082804C /* SweatherUITests */,
+				E477EED12537AE860082804C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E477EED12537AE860082804C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E477EED02537AE860082804C /* Sweather.app */,
+				E477EEE62537AE870082804C /* SweatherTests.xctest */,
+				E477EEF12537AE870082804C /* SweatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E477EED22537AE870082804C /* Sweather */ = {
+			isa = PBXGroup;
+			children = (
+				E477EED32537AE870082804C /* AppDelegate.swift */,
+				E477EED52537AE870082804C /* SceneDelegate.swift */,
+				E477EF532537B1FE0082804C /* DashboardViewModel.swift */,
+				E46821B22539213A00DD12AE /* Util */,
+				E477EF772537F5D80082804C /* Model */,
+				E477EF152537AED50082804C /* Manager */,
+				E477EF0C2537AEB70082804C /* View */,
+				E477EED92537AE870082804C /* Assets.xcassets */,
+				E477EEDE2537AE870082804C /* LaunchScreen.storyboard */,
+				E477EF402537B0260082804C /* LottieFile */,
+				E477EEE12537AE870082804C /* Info.plist */,
+				E477EEDB2537AE870082804C /* Preview Content */,
+			);
+			path = Sweather;
+			sourceTree = "<group>";
+		};
+		E477EEDB2537AE870082804C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E477EEDC2537AE870082804C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E477EEE92537AE870082804C /* SweatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				E477EEEA2537AE870082804C /* SweatherTests.swift */,
+				E477EEEC2537AE870082804C /* Info.plist */,
+			);
+			path = SweatherTests;
+			sourceTree = "<group>";
+		};
+		E477EEF42537AE870082804C /* SweatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E477EEF52537AE870082804C /* SweatherUITests.swift */,
+				E477EEF72537AE870082804C /* Info.plist */,
+			);
+			path = SweatherUITests;
+			sourceTree = "<group>";
+		};
+		E477EF0C2537AEB70082804C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E477EED72537AE870082804C /* ContentView.swift */,
+				E477EF162537AEF90082804C /* LottieView.swift */,
+				E46821A82539201000DD12AE /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E477EF152537AED50082804C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E477EF102537AECB0082804C /* NetworkManager.swift */,
+				E477EF7E2537F8D90082804C /* LocationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E477EF402537B0260082804C /* LottieFile */ = {
+			isa = PBXGroup;
+			children = (
+				E46821A02539173A00DD12AE /* error.json */,
+				E477EF262537B01C0082804C /* snow.json */,
+				E477EF292537B01C0082804C /* stormshowersday.json */,
+				E477EF242537B01C0082804C /* mist.json */,
+				E477EF2C2537B01C0082804C /* cloudynight.json */,
+				E4682198253915C100DD12AE /* partlycloudy.json */,
+				E477EF272537B01C0082804C /* rainynight.json */,
+				E477EF2D2537B01C0082804C /* snownight.json */,
+				E477EF2B2537B01C0082804C /* night.json */,
+				E477EF2E2537B01C0082804C /* partlyshower.json */,
+				E477EF212537B01B0082804C /* snowsunny.json */,
+				E477EF232537B01C0082804C /* storm.json */,
+				E477EF282537B01C0082804C /* sunny.json */,
+				E477EF252537B01C0082804C /* thunder.json */,
+				E477EF2A2537B01C0082804C /* windy.json */,
+				E477EF222537B01B0082804C /* nightrain.json */,
+			);
+			path = LottieFile;
+			sourceTree = "<group>";
+		};
+		E477EF772537F5D80082804C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E477EF622537F5D30082804C /* City.swift */,
+				E477EF672537F5D40082804C /* Cloud.swift */,
+				E477EF682537F5D40082804C /* Coord.swift */,
+				E477EF692537F5D40082804C /* Main.swift */,
+				E477EF602537F5D30082804C /* Rain.swift */,
+				E477EF642537F5D30082804C /* RespondModel.swift */,
+				E477EF612537F5D30082804C /* RespondWeather.swift */,
+				E477EF652537F5D30082804C /* Sys.swift */,
+				E477EF632537F5D30082804C /* Weather.swift */,
+				E477EF662537F5D30082804C /* Wind.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E477EECF2537AE860082804C /* Sweather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E477EEFA2537AE870082804C /* Build configuration list for PBXNativeTarget "Sweather" */;
+			buildPhases = (
+				E477EECC2537AE860082804C /* Sources */,
+				E477EECD2537AE860082804C /* Frameworks */,
+				E477EECE2537AE860082804C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sweather;
+			packageProductDependencies = (
+				E477EF072537AEB10082804C /* Lottie */,
+			);
+			productName = Sweather;
+			productReference = E477EED02537AE860082804C /* Sweather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E477EEE52537AE870082804C /* SweatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E477EEFD2537AE870082804C /* Build configuration list for PBXNativeTarget "SweatherTests" */;
+			buildPhases = (
+				E477EEE22537AE870082804C /* Sources */,
+				E477EEE32537AE870082804C /* Frameworks */,
+				E477EEE42537AE870082804C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E477EEE82537AE870082804C /* PBXTargetDependency */,
+			);
+			name = SweatherTests;
+			productName = SweatherTests;
+			productReference = E477EEE62537AE870082804C /* SweatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E477EEF02537AE870082804C /* SweatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E477EF002537AE870082804C /* Build configuration list for PBXNativeTarget "SweatherUITests" */;
+			buildPhases = (
+				E477EEED2537AE870082804C /* Sources */,
+				E477EEEE2537AE870082804C /* Frameworks */,
+				E477EEEF2537AE870082804C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E477EEF32537AE870082804C /* PBXTargetDependency */,
+			);
+			name = SweatherUITests;
+			productName = SweatherUITests;
+			productReference = E477EEF12537AE870082804C /* SweatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E477EEC82537AE860082804C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					E477EECF2537AE860082804C = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					E477EEE52537AE870082804C = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = E477EECF2537AE860082804C;
+					};
+					E477EEF02537AE870082804C = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = E477EECF2537AE860082804C;
+					};
+				};
+			};
+			buildConfigurationList = E477EECB2537AE860082804C /* Build configuration list for PBXProject "Sweather" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E477EEC72537AE860082804C;
+			packageReferences = (
+				E477EF062537AEB10082804C /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = E477EED12537AE860082804C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E477EECF2537AE860082804C /* Sweather */,
+				E477EEE52537AE870082804C /* SweatherTests */,
+				E477EEF02537AE870082804C /* SweatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E477EECE2537AE860082804C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E477EF352537B01C0082804C /* rainynight.json in Resources */,
+				E477EEE02537AE870082804C /* LaunchScreen.storyboard in Resources */,
+				E477EF302537B01C0082804C /* nightrain.json in Resources */,
+				E477EF322537B01C0082804C /* mist.json in Resources */,
+				E477EF362537B01C0082804C /* sunny.json in Resources */,
+				E477EF342537B01C0082804C /* snow.json in Resources */,
+				E477EF2F2537B01C0082804C /* snowsunny.json in Resources */,
+				E477EF312537B01C0082804C /* storm.json in Resources */,
+				E477EEDD2537AE870082804C /* Preview Assets.xcassets in Resources */,
+				E46821A12539173A00DD12AE /* error.json in Resources */,
+				E477EF372537B01C0082804C /* stormshowersday.json in Resources */,
+				E4682199253915C100DD12AE /* partlycloudy.json in Resources */,
+				E477EF3B2537B01C0082804C /* snownight.json in Resources */,
+				E477EF3C2537B01C0082804C /* partlyshower.json in Resources */,
+				E477EF332537B01C0082804C /* thunder.json in Resources */,
+				E477EF382537B01C0082804C /* windy.json in Resources */,
+				E477EF392537B01C0082804C /* night.json in Resources */,
+				E477EF3A2537B01C0082804C /* cloudynight.json in Resources */,
+				E477EEDA2537AE870082804C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E477EEE42537AE870082804C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E477EEEF2537AE870082804C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E477EECC2537AE860082804C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E477EF6E2537F5D40082804C /* RespondModel.swift in Sources */,
+				E46821AE2539213500DD12AE /* Double + toFahrenheit.swift in Sources */,
+				E477EF7F2537F8D90082804C /* LocationManager.swift in Sources */,
+				E477EF112537AECB0082804C /* NetworkManager.swift in Sources */,
+				E477EF6A2537F5D40082804C /* Rain.swift in Sources */,
+				E477EF6C2537F5D40082804C /* City.swift in Sources */,
+				E477EF6B2537F5D40082804C /* RespondWeather.swift in Sources */,
+				E477EF6D2537F5D40082804C /* Weather.swift in Sources */,
+				E477EF722537F5D40082804C /* Coord.swift in Sources */,
+				E477EED42537AE870082804C /* AppDelegate.swift in Sources */,
+				E477EF172537AEF90082804C /* LottieView.swift in Sources */,
+				E477EF542537B1FE0082804C /* DashboardViewModel.swift in Sources */,
+				E477EF732537F5D40082804C /* Main.swift in Sources */,
+				E477EED62537AE870082804C /* SceneDelegate.swift in Sources */,
+				E477EED82537AE870082804C /* ContentView.swift in Sources */,
+				E477EF712537F5D40082804C /* Cloud.swift in Sources */,
+				E477EF6F2537F5D40082804C /* Sys.swift in Sources */,
+				E46821A92539201000DD12AE /* DetailView.swift in Sources */,
+				E46821942539133400DD12AE /* String + lottieCode.swift in Sources */,
+				E477EF702537F5D40082804C /* Wind.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E477EEE22537AE870082804C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E477EEEB2537AE870082804C /* SweatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E477EEED2537AE870082804C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E477EEF62537AE870082804C /* SweatherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E477EEE82537AE870082804C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E477EECF2537AE860082804C /* Sweather */;
+			targetProxy = E477EEE72537AE870082804C /* PBXContainerItemProxy */;
+		};
+		E477EEF32537AE870082804C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E477EECF2537AE860082804C /* Sweather */;
+			targetProxy = E477EEF22537AE870082804C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E477EEDE2537AE870082804C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E477EEDF2537AE870082804C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E477EEF82537AE870082804C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E477EEF92537AE870082804C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E477EEFB2537AE870082804C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_ASSET_PATHS = "\"Sweather/Preview Content\"";
+				DEVELOPMENT_TEAM = 66FFB9V7HZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Sweather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vido.Sweather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E477EEFC2537AE870082804C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_ASSET_PATHS = "\"Sweather/Preview Content\"";
+				DEVELOPMENT_TEAM = 66FFB9V7HZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Sweather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vido.Sweather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E477EEFE2537AE870082804C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SweatherTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vido.SweatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sweather.app/Sweather";
+			};
+			name = Debug;
+		};
+		E477EEFF2537AE870082804C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SweatherTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vido.SweatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sweather.app/Sweather";
+			};
+			name = Release;
+		};
+		E477EF012537AE870082804C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SweatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vido.SweatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sweather;
+			};
+			name = Debug;
+		};
+		E477EF022537AE870082804C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SweatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vido.SweatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sweather;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E477EECB2537AE860082804C /* Build configuration list for PBXProject "Sweather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E477EEF82537AE870082804C /* Debug */,
+				E477EEF92537AE870082804C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E477EEFA2537AE870082804C /* Build configuration list for PBXNativeTarget "Sweather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E477EEFB2537AE870082804C /* Debug */,
+				E477EEFC2537AE870082804C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E477EEFD2537AE870082804C /* Build configuration list for PBXNativeTarget "SweatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E477EEFE2537AE870082804C /* Debug */,
+				E477EEFF2537AE870082804C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E477EF002537AE870082804C /* Build configuration list for PBXNativeTarget "SweatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E477EF012537AE870082804C /* Debug */,
+				E477EF022537AE870082804C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E477EF062537AEB10082804C /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E477EF072537AEB10082804C /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E477EF062537AEB10082804C /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E477EEC82537AE860082804C /* Project object */;
+}
