@@ -13,7 +13,7 @@ public enum Link {
     case coordinateLink(lat: String, lon: String)
     
     private static let base = "https://api.openweathermap.org/data/2.5/weather?"
-    private static let appKey = URLQueryItem(name:"appid", value:"135770bcd37e66027735e6a3a26973cc")
+    private static let appKey = URLQueryItem(name:"appid", value:"Put Your API Key Here")
 
     public var url: URL? {
         switch self {
