@@ -1,7 +1,7 @@
 # Sweather
-Sweather is simple animated weather App with Lottie and SwiftUI.
+Sweather is a simple animated weather App created with SwiftUI.
 
-This app integrated MapKit and Lottie. Mapkit helps to check the latest user location. Then it does an API call to OpenWeather with latitude and longitude as the parameter. After we receive the result, we map the icon id to a Lottie JSON file that we have. 
+This app integrates MapKit and Lottie. Mapkit helps to check the latest user location. Then, it does an API call to OpenWeather with latitude and longitude as the parameter. After we receive the result, we map the icon id to a Lottie JSON file that we have.
 
 ## Assets :
   - Error Lottie: https://lottiefiles.com/29188-error
